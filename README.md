@@ -1,3 +1,3 @@
 # Health Potatoes
 
-A fitness app created with React.js
+One potato... two. Health potatoes is a fitness app created with React.js
