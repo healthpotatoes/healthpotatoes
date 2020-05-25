@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
-import { Button, StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 const Home = () => {
-  const [state, setstate] = useState('Hallo!')
+  const [state, setState] = useState('Hallo!')
 
   const handleClick = async () => {
     const callBackEndAPI = async () => {
-      const response = await fetch('/express_backend')
+      const response = await fetch('http://localhost:5000/express_backend')
       const body = await response.json()
-      console.log('it hit')
+
       if (response.status !== 200) throw Error(body.message)
-      return body;
+      return body
     }
-    console.log('it hit')
+
     callBackEndAPI()
     .then(res => setState(res.express))
     .catch(err => console.log(err))
@@ -21,7 +21,9 @@ const Home = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>{state}</Text>
-      <Button title="Hit the Backend" onPress={() => handleClick} />
+      <TouchableOpacity onPress={() => handleClick()}>
+        <Text style={styles.btn}>Hit the Backend</Text>
+      </TouchableOpacity>
     </View>
   )
 }
@@ -36,10 +38,13 @@ const styles = StyleSheet.create({
   text: {
     textAlign: 'center',
     fontSize: 20,
-    color: '#000'
+    color: '#fafafa'
   }, 
   btn : {
+    marginTop: 10,
+    color: 'darkslateblue',
     padding: 10,
-    backgroundColor: 'blue'
+    backgroundColor: '#0DE0CF',
+    textAlign: 'center'
   }
 })

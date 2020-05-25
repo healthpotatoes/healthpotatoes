@@ -21,7 +21,7 @@ mongoose.connect(db, {
 
 // Test Route
 app.get('/express_backend', (req, res) => {
-  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' })
+  res.send({ express: 'Express is serving from the backend :)' })
 });
 
 const port = process.env.PORT || 5000;
