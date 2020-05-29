@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import Home from './screen/Home';
+import Home from './components/screen/Home';
 
 const App = () => {
   return (
