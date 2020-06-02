@@ -1,0 +1,35 @@
+{
+  "name": "healthpotatoes",
+  "version": "1.0.0",
+  "description": "A healthy app for healthy people.",
+  "main": "client/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/healthpotatoes/healthpotatoes.git"
+  },
+  "author": "Kimberly and Shane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/healthpotatoes/healthpotatoes/issues"
+  },
+  "homepage": "https://github.com/healthpotatoes/healthpotatoes#readme",
+  "devDependencies": {
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "prettier": "2.0.5",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "onchange": "^7.0.2"
+  }
+}
