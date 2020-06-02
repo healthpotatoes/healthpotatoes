@@ -1,17 +1,17 @@
-import React from 'react';
 // import {StyleSheet, Text, View}from "react-native";
 import {
   Container,
-  Header,
   Content,
   Form,
-  Item,
+  Header,
   Input,
-  Text,
+  Item,
   Label,
+  Text,
 } from 'native-base';
+import React from 'react';
 
-export default class Signup extends Component {
+class Signup extends Component {
   render() {
     return (
       <Container>
@@ -33,4 +33,5 @@ export default class Signup extends Component {
     );
   }
 }
+
 export default Signup;

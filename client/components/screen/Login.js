@@ -1,15 +1,15 @@
 import {
   Container,
-  Header,
   Content,
   Form,
-  Item,
+  Header,
   Input,
-  Text,
+  Item,
   Label,
+  Text,
 } from 'native-base';
 
-export default class Login extends Component {
+class Login extends Component {
   render() {
     return (
       <Container>
@@ -31,4 +31,5 @@ export default class Login extends Component {
     );
   }
 }
+
 export default Login;
