@@ -63,6 +63,8 @@ That configuration will allow the backend development server to connect with you
 We use prettier for auto-formatting of code. You will notice that it runs on every git commit thanks to pretty-quick and husky. You can read more about that here:
 [All about Prettier and precommit hooks](https://prettier.io/docs/en/precommit.html)
 
+If you want to have Prettier correct your code on file save, you can run `npm run prettier-watch` in a dedicated terminal and it will watch for changes.
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Follow the issue template and include all relevant information so that we may better understand what you are attempting to do.
