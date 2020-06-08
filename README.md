@@ -12,7 +12,7 @@ You will need to have installed React Native in order to work on this project. Y
 
 Once you have forked and cloned the repo as well as made sure to have React Native installed, you should run:
 
-```javascript
+```bash
   npm install
 ```
 
@@ -20,39 +20,45 @@ This will ensure that all dependencies for the project are installed in your dev
 
 Please note that in order to run the client development server, you will need to cd into the client folder.
 
-```javascript
+```bash
   cd client
   npm run ios
 ```
 
 or
 
-```javascript
+```bash
   cd client
   npm run android
 ```
 
 Also note that in order to run the backend server you will need to cd into the backend folder.
 
-```javascript
+```bash
   cd backend
   npm start
 ```
 
+### MongoDB
+
 We are using MongoDB for the backend. You will need to setup your own development MongoDB database if you need a backend for your development tasks. You can easily setup a MongoDB account and database folowing these instructions:
 [MongoDB account and database setup](https://docs.atlas.mongodb.com/getting-started/)
 
-Once you have your MongoDB URI, you will need to create a `.env` file in the root or backend directory of your cloned project (please remember to add .env to your .gitignore so it is not commited to a public repository. You want to keep that MongoDB URI to yourself!).
+Once you have your MongoDB URI, you will need to create a `.env` file in the root or backend directory of your cloned project.
+
+**Please remember to add .env to your .gitignore so it is not commited to a public repository. You want to keep that MongoDB URI to yourself!**
 
 The `.env` file will hold your environment variable for this project. If you look in `backend/server.js` you will notice the environment variable which injects the MongoDB URI is called `HEALTH_POTATOES_MONGO_URI`.
 
 You can set the value of that environment variable in your `.env` file like so:
 
-```javascript
+```js
   HEALTH_POTATOES_MONGO_URI=<your MongoDB URI goes here>
 ```
 
 That configuration will allow the development server to connect with your MongoDB database.
+
+### Code Formatting
 
 We use prettier for auto-formatting of code. You will notice that it runs on every git commit thanks to pretty-quick and husky. You can read more about that here:
 [All about Prettier and precommit hooks](https://prettier.io/docs/en/precommit.html)
