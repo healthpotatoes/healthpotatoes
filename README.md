@@ -41,7 +41,7 @@ Also note that in order to run the backend server you will need to cd into the b
 
 ### MongoDB
 
-We are using MongoDB for the backend. You will need to setup your own development MongoDB database if you need a backend for your development tasks. You can easily setup a MongoDB account and database folowing these instructions:
+We are using MongoDB for the backend. You will need to setup your own MongoDB database if you need a backend for your development tasks. You can easily setup a MongoDB account and database folowing these instructions:
 [MongoDB account and database setup](https://docs.atlas.mongodb.com/getting-started/)
 
 Once you have your MongoDB URI, you will need to create a `.env` file in the root or backend directory of your cloned project.
@@ -56,7 +56,7 @@ You can set the value of that environment variable in your `.env` file like so:
   HEALTH_POTATOES_MONGO_URI=<your MongoDB URI goes here>
 ```
 
-That configuration will allow the development server to connect with your MongoDB database.
+That configuration will allow the backend development server to connect with your MongoDB database.
 
 ### Code Formatting
 
