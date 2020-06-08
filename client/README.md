@@ -1,3 +1,0 @@
-# Health Potatoes
-
-One potato... two. Health potatoes is a fitness app created with React Native for ios and Android mobile applications. 
