@@ -120,7 +120,6 @@ While the prerequisites above must be satisfied prior to having your pull reques
   - :memo: `:memo:` when writing docs
   - :bug: `:bug:` when fixing a bug
   - :boom: `:boom:` when removing code or files
-  - :green_heart: `:green_heart:` when fixing the CI build
   - :microscope: `:microscope:` when adding tests
   - :lock: `:lock:` when dealing with security
   - :arrow_up: `:arrow_up:` when upgrading dependencies
