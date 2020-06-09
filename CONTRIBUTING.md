@@ -10,8 +10,6 @@ This document is a set of guidelines for contributing to Health Potatoes. These 
 
 [What should I know before I get started?](#what-should-i-know-before-i-get-started)
 
-- [Some link goes here](#some-link)
-
 [How Can I Contribute?](#how-can-i-contribute)
 
 - [Reporting Bugs](#reporting-bugs)
