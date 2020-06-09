@@ -29,7 +29,9 @@ This project and everyone participating in it is governed by this [Code of Condu
 
 ## What should I know before I get started?
 
-Put some information here!!!
+Please read over this guide before starting anything. Once you have done so you will need to learn about setting up the project in your environment so you can begin contributing (if you are planning to submit a Pull Request, otherwise you can just follow this guide to learn how to report bugs or suggest enhancements).
+
+You can find instructions on how to fork this project and set it up in your local environment [here in the read me](README.md).
 
 ## How Can I Contribute?
 
@@ -85,7 +87,7 @@ Unsure where to begin contributing? Take a look at the issues section of the Hea
 
 #### Local development
 
-Put some information here
+Please [refer to our readme](README.md) for information on setting up your local environment for development.
 
 ### Pull Requests
 
@@ -113,15 +115,15 @@ While the prerequisites above must be satisfied prior to having your pull reques
 - Limit the first line to 72 characters or less
 - Reference issues and pull requests liberally after the first line
 - When only changing documentation, include `[ci skip]` in the commit title
-- Consider starting the commit message with an applicable emoji:
+- Consider starting the commit message with an applicable emoji, such as:
   - :art: `:art:` when improving the format/structure of the code
-  - :racehorse: `:racehorse:` when improving performance
-  - :non-potable_water: `:non-potable_water:` when plugging memory leaks
+  - :speedboat: `:speedboat:` when improving performance
+  - :umbrella: `:umbrella:` when fixing memory leaks
   - :memo: `:memo:` when writing docs
   - :bug: `:bug:` when fixing a bug
-  - :fire: `:fire:` when removing code or files
+  - :boom: `:boom:` when removing code or files
   - :green_heart: `:green_heart:` when fixing the CI build
-  - :white_check_mark: `:white_check_mark:` when adding tests
+  - :microscope: `:microscope:` when adding tests
   - :lock: `:lock:` when dealing with security
   - :arrow_up: `:arrow_up:` when upgrading dependencies
   - :arrow_down: `:arrow_down:` when downgrading dependencies
