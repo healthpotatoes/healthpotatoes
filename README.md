@@ -67,6 +67,8 @@ If you want to have Prettier correct your code on file save, you can run `npm ru
 
 ## Contributing
 
+Please take the time to read over [our contribution guide](CONTRIBUTING.md) before opening any issues or submitting any pull requests. Below is some basic information about contributing to this project:
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Follow the issue template and include all relevant information so that we may better understand what you are attempting to do.
 
 Once your request to work on a major change has been approved, feel free to code away. When your pull request is ready for review, we will take our time carefully going over the changes to make sure it is in line with the project goals agreed upon in the issue that was approved.
