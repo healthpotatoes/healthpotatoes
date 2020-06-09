@@ -1,4 +1,4 @@
-### Fixes #<insert realted github issue number here>
+### Fixes # <--insert related issue number
 
 ### Proposed changes for this Pull Request:
 -
