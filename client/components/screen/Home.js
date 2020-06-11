@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 const Home = () => {
   const [state, setState] = useState('Hallo!');
@@ -9,7 +9,9 @@ const Home = () => {
       const response = await fetch('http://localhost:5000/express_backend');
       const body = await response.json();
 
-      if (response.status !== 200) throw Error(body.message);
+      if (response.status !== 200) {
+        throw Error(body.message);
+      }
       return body;
     };
 
