@@ -8,7 +8,7 @@ import {
   Label,
   Text,
 } from 'native-base';
-import React from 'react';
+import React, {Component} from 'react';
 
 class Signup extends Component {
   render() {
