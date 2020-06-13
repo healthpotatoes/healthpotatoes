@@ -8,6 +8,7 @@ import {
   Label,
   Text,
 } from 'native-base';
+import React, { Component } from 'react';
 
 class Login extends Component {
   render() {
