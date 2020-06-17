@@ -15,7 +15,7 @@
       "build": "xcodebuild -workspace ios/Health.xcworkspace -scheme Health -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
       "type": "ios.simulator",
       "device": {
-        "type": "iPhone 11 Pro"
+        "type": "iPhone 11"
       }
     },
     "android": {
