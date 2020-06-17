@@ -22,6 +22,7 @@ matrix:
         - brew tap wix/brew
         - brew install applesimutils
       script:
+        - cd client
         - yarn install
         - yarn test
         - cd ios
