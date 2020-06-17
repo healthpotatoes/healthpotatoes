@@ -19,11 +19,8 @@ install:
   - nvm alias default $NODE_VERSION
 
   - npm install -g react-native-cli
-  - npm install -g detox-cli
-  - npm install
 
 script:
   - cd client
   - npm install
-  - detox build --configuration ios.sim.release
-  - detox test --configuration ios.sim.release --cleanup
+  - npm run test
