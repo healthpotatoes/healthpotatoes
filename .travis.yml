@@ -23,8 +23,8 @@ matrix:
         - brew install applesimutils
       script:
         - cd client
-        - yarn install
-        - yarn test
+        - npm install
+        - npm run test
         - cd ios
         - pod install
         - cd ..
