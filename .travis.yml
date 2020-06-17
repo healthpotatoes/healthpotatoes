@@ -1,8 +1,18 @@
+language: objective-c
+osx_image: xcode8.3
+
+branches:
+  only:
+    - master
+
 env:
   global:
     - NODE_VERSION=stable
 
 install:
+  - cd client
+  - brew tap wix/brew
+  - brew install applesimutils
   - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
   - export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
   - nvm install $NODE_VERSION
@@ -11,22 +21,7 @@ install:
 
   - npm install -g react-native-cli
   - npm install -g detox-cli
-  - npm install
 
-matrix:
-  include:
-    - os: osx
-      osx_image: xcode11.3
-      language: objective-c
-      before_install:
-        - brew tap wix/brew
-        - brew install applesimutils
-      script:
-        - cd client
-        - npm install
-        - npm run test
-        - cd ios
-        - pod install
-        - cd ..
-        - detox build --configuration ios.sim.release
-        - detox test --configuration ios.sim.release --cleanup
+script:
+  - detox build --configuration ios.sim.release
+  - detox test --configuration ios.sim.release --cleanup
