@@ -10,6 +10,14 @@
         "type": "iPhone 11"
       }
     },
+    "ios.sim.release": {
+      "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/Health.app",
+      "build": "xcodebuild -workspace ios/Health.xcworkspace -scheme Health -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
+      "type": "ios.simulator",
+      "device": {
+        "type": "iPhone 11"
+      }
+    },
     "android": {
       "type": "android.emulator",
       "binaryPath": "SPECIFY_PATH_TO_YOUR_APP_BINARY",
