@@ -12,8 +12,8 @@
   "proxy": "http://localhost:5000",
   "dependencies": {
     "native-base": "^2.13.12",
-    "react": "16.11.0",
-    "react-native": "0.62.2"
+    "react": "^16.13.1",
+    "react-native": "^0.63.1"
   },
   "devDependencies": {
     "@babel/core": "7.9.6",
